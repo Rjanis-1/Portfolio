@@ -1,0 +1,145 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1e023b;
+    color: white;
+}
+
+#contact-links mt-4{
+
+    justify-content: space-around;
+}
+.navbar {
+    background: #260551;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.about, .projects, .achievements, .certifications, .contact {
+    background: #2b0f5b;
+    
+    margin-bottom: 150px;
+
+    
+}
+.about{
+    background: #260551;
+    padding: 30px 30px;
+    margin: 60px;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.project-grid {
+    display:inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+
+.project-box {
+    flex: 1 1 calc(33.33% - 20px); /* Equal sizing */
+    margin: 10px;
+    min-width: 300px; /* Minimum size for responsive design */
+    height: 200px;
+    
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(50% - 20px); /* 50% width for each column */
+    min-width: 300px; /* Minimum width to prevent boxes from shrinking too small */
+}
+
+.project-box {
+    background: #260547;
+    padding: 20px;
+    margin: 50px;
+    border: 2px double #9c91a8;
+    border-radius: 15px;
+    column-gap: 20px;
+}
+.project-box:hover, .achievement-box:hover {
+    background-color: #5a0099;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffd700;
+}
+
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #240f49;
+    color: white;
+    border: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #5c00b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+.contact{
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
